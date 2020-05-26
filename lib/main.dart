@@ -219,7 +219,7 @@ class _MyAppState extends State<MyApp> {
                   padding: const EdgeInsets.all(16.0),
                   child: Center(
                     //this checks weather the word we have spoken matches with these two words or not...if matches it shows a tick icon or else a wrong icon
-                    child: lastWords=='वर्णमाला '||lastWords=='समय '? Icon(
+                    child: lastWords=='वर्णमाला '||lastWords=='समय '||lastWords=='लेकिन '||lastWords=='अगर '||lastWords=='आप '? Icon(
                       Icons.check,
                       color: Colors.green,
                       size: 24.0,
@@ -235,7 +235,7 @@ class _MyAppState extends State<MyApp> {
                   child: Center(
                     //this checks weather the word we have spoken matches with these two words or not...if matches it shows a tick icon or else a wrong icon
                     child: Text(
-                      "try speaking   'वर्णमाला'   or   'समय'"
+                      "try speaking   'वर्णमाला' or 'लेकिन' or 'समय' or 'आप' or 'अगर' "
                     ),
                   ),
                 ),
